@@ -40,5 +40,10 @@ input {
 
 ul {
     text-decoration: none;
+    
+}
+
+.item-completado {
+    text-decoration: line-through;
 }
 
