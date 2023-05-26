@@ -6,11 +6,11 @@ $(document).ready(function(){
         const inputNomeDaTarefa = $('#nome-tarefa').val();
         const addNaLista = $('#lista-tarefa');
         
-        $('<li>').text(inputNomeDaTarefa).appendTo(addNaLista)('</li>');
+        $('<li>').text(inputNomeDaTarefa).appendTo(addNaLista) ;
     })
     
-    $('li').click(function (){
-       $(this).addClass('item-completado');
+    $('#lista-tarefa').on('click','li', function (){
+    $(this).toggleClass('item-completado');
     })
 
 })
